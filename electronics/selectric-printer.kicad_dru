@@ -1,0 +1,6 @@
+(version 1)
+
+(rule "ClearanceUSB"
+(constraint clearance (min 0.15mm))
+(condition "(A.NetClass == 'USB') && (B.Type == 'zone') && (A.type != 'via')")
+)
